@@ -29,6 +29,7 @@ runs:
       run: |
         git clone https://gitlab.com/siesta-project/siesta.git
         cd siesta/Obj/
+        mv gfortran.make arch.make
         sh ../Src/obj_setup.sh
         make
       shell: bash
