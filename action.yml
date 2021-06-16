@@ -17,8 +17,6 @@ inputs:
         default: 'ip.out'
         required: true
 
-outputs:
-  
 runs:
   using: "composite"
   steps:
