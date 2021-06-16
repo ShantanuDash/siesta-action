@@ -23,9 +23,7 @@ runs:
     - name: Check vars
       run: echo "jdjhugh" ${{ inputs.dir-name }} "${{ inputs.file-name }}" "${{ inputs.out-name }}"
       shell: bash
-    - name: Create Output Directory
-      run: mkdir ${{ inputs.dir-name }}
-      shell: bash
+
       
     - name: Install Siesta
       run: |
