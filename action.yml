@@ -20,6 +20,9 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: Check vars
+      run: echo "${{ github.event.inputs.dir-name }}" "${{ github.event.inputs.file-name }}" "${{ github.event.inputs.out-name }}"
+      shell: bash
     - name: Create Output Directory
       run: mkdir "${{ github.event.inputs.dir-name }}"
       shell: bash
