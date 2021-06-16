@@ -21,10 +21,10 @@ runs:
   using: "composite"
   steps:
     - name: Check vars
-      run: echo "jdjhugh" ${{ github.event.inputs.dir-name }} "${{ github.event.inputs.file-name }}" "${{ github.event.inputs.out-name }}"
+      run: echo "jdjhugh" ${{ inputs.dir-name }} "${{ inputs.file-name }}" "${{ inputs.out-name }}"
       shell: bash
     - name: Create Output Directory
-      run: mkdir "${{ github.event.inputs.dir-name }}"
+      run: mkdir ${{ inputs.dir-name }}
       shell: bash
       
     - name: Install Siesta
@@ -38,12 +38,12 @@ runs:
     - name: Copy siesta
       run: |
         pwd
-        cp siesta/Obj/siesta "${{ github.event.inputs.dir-name }}"/
+        cp siesta/Obj/siesta ${{ inputs.dir-name }}/
       shell: bash  
 
     - name: Calculation
       run: |
-        cd "${{ github.event.inputs.dir-name }}"/
+        cd ${{inputs.dir-name }}/
         ls
-        ./siesta < "${{ github.event.inputs.file-name }}" | tee "${{ github.event.inputs.out-name }}"
+        ./siesta < ${{ inputs.file-name }} | tee ${{ inputs.out-name }}
       shell: bash
