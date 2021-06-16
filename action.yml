@@ -1,5 +1,5 @@
-name: 'Hello World'
-description: 'Greet someone'
+name: 'siesta'
+description: 'This action downloads the latest stable version of Siesta and runs your DFT calculations in GitHub Actions'
 author: 'ShantanuDash'
 inputs:
       file-name:
