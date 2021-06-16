@@ -1,0 +1,48 @@
+name: 'Hello World'
+description: 'Greet someone'
+author: 'ShantanuDash'
+inputs:
+      file-name:
+        description: 'Name of the input file(with extention)'
+        default: 'ip.fdf'
+        required: true
+        
+      dir-name:
+        description: 'Name of the directory(folder) input files'
+        default: 'ip'
+        required: true
+        
+      out-name:
+        description: 'Name of the output file'
+        default: 'ip.out'
+        required: true
+
+outputs:
+  
+runs:
+  using: "composite"
+  steps:
+    - name: Create Output Directory
+      run: mkdir ${{ github.event.inputs.dir-name }}
+      shell: bash
+      
+    - name: Install Siesta
+      run: |
+        git clone https://gitlab.com/siesta-project/siesta.git
+        cd siesta/Obj/
+        sh ../Src/obj_setup.sh
+        make
+      shell: bash
+      
+    - name: Copy siesta
+      run: |
+        pwd
+        cp siesta/Obj/siesta ${{ github.event.inputs.dir-name }}/
+      shell: bash  
+
+    - name: Calculation
+      run: |
+        cd ${{ github.event.inputs.dir-name }}/
+        ls
+        ./siesta < ${{ github.event.inputs.file-name }} | tee ${{ github.event.inputs.out-name }} 
+      shell: bash
