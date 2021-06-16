@@ -21,7 +21,7 @@ runs:
   using: "composite"
   steps:
     - name: Create Output Directory
-      run: mkdir ${{ github.event.inputs.dir-name }}
+      run: mkdir "${{ github.event.inputs.dir-name }}"
       shell: bash
       
     - name: Install Siesta
@@ -35,12 +35,12 @@ runs:
     - name: Copy siesta
       run: |
         pwd
-        cp siesta/Obj/siesta ${{ github.event.inputs.dir-name }}/
+        cp siesta/Obj/siesta "${{ github.event.inputs.dir-name }}"/
       shell: bash  
 
     - name: Calculation
       run: |
-        cd ${{ github.event.inputs.dir-name }}/
+        cd "${{ github.event.inputs.dir-name }}"/
         ls
-        ./siesta < ${{ github.event.inputs.file-name }} | tee ${{ github.event.inputs.out-name }} 
+        ./siesta < "${{ github.event.inputs.file-name }}" | tee "${{ github.event.inputs.out-name }}"
       shell: bash
