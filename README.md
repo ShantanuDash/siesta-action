@@ -93,6 +93,6 @@ After you have added the input files and the workflow file, you can trigger/run 
 8. After the workflow has run sucessfully go back to the previous page( you might have to refresh). ![Step-8](assets/Image%208.png)
 
 #### You can view an example repo [here](https://GitHub.com/ShantanuDash/temp)
-![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ShantanuDash&repo=temp)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ShantanuDash&repo=temp&show_owner=True)](https://GitHub.com/ShantanuDash/temp)
 
 
