@@ -83,4 +83,4 @@ jobs:
 
 After you have added the input files and the workflow file, you can trigger/run the workflow as shown below:
 
-![Step-1](assets/Image 1.png?raw=true) 
+![Step-1](https://github.com/ShantanuDash/siesta-action/blob/41785f184a83cd18d4e1804b85f4131435f6a4e0/assets/Image%201.png) 
