@@ -1,5 +1,5 @@
 # [siesta-action](https://github.com/marketplace/actions/siesta-action)
-I use the [latest stable release of siesta](https://gitlab.com/siesta-project/siesta/-/tree/rel-4.1) [Siesta](https://gitlab.com/siesta-project/siesta) and using github action perform small DFT calculations.
+I use the [latest stable release ](https://gitlab.com/siesta-project/siesta/-/tree/rel-4.1) of  [Siesta](https://gitlab.com/siesta-project/siesta) and using github action perform small DFT calculations.
 ### Usage:
 Keep your directory structure similar to the following. 
 
