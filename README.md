@@ -84,9 +84,9 @@ jobs:
 After you have added the input files and the workflow file, you can trigger/run the workflow as shown below:
 1. Click on the actions tab. ![Step-1](assets/Image%201.png)
 2. Click on the name of the workflow. ![Step-2](assets/Image%202.png)
-3. Click on `Run Workflow`  ![Step-3](assets/Image%203.png)
-4. Change the input values according to your needs and then click the green button `Run Workflow` ![Step-4](assets/Image%204.png)
-5. Click on the ![Step-5](assets/Image%205.png)
-6. Click on the ![Step-6](assets/Image%206.png)
+3. Click on `Run workflow`  ![Step-3](assets/Image%203.png)
+4. Change the input values according to your needs and then click on the green button `Run workflow` ![Step-4](assets/Image%204.png)
+5. Click on the workflow name ![Step-5](assets/Image%205.png)
+6. Click on the job name ![Step-6](assets/Image%206.png)
 7. If the workflow runs successfully you should see something like this, otherwise you can click on the steps and see where it went wrong and start the workflow again. ![Step-7](assets/Image%207.png)
 8. After the workflow has run sucessfully go back to the previous page( you might have to refresh). ![Step-8](assets/Image%208.png)
