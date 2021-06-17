@@ -1,6 +1,8 @@
 # [siesta-action](https://github.com/marketplace/actions/siesta-action) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FShantanuDash%2Fsiesta-action&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) 
 _Do consider starring this repo/action if you like it. Also let me know about any improvements or suggestions._
+
 I use the [latest stable release ](https://gitlab.com/siesta-project/siesta/-/tree/rel-4.1) of  [Siesta](https://gitlab.com/siesta-project/siesta) and using github action perform small DFT calculations.
+
 ### Usage:
 Keep your directory structure similar to the following. 
 
