@@ -82,4 +82,5 @@ jobs:
 ```
 
 After you have added the input files and the workflow file, you can trigger/run the workflow as shown below:
-![Step 1](assets/Image 1.png)
+
+![Step 1](assets/Image 1.png) 
