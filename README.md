@@ -5,7 +5,8 @@ Keep your directory structure similar to the following.
 **Note** : The only neccessary files are the:
   - input-directory with the input files
   - .github/workflows/ directory with the Your-worflow-file.yml
-'''
+
+```
 GitHub Repository
 ├── input-directory
 │   ├── 
@@ -14,4 +15,4 @@ GitHub Repository
 └── .github
     └── workflows
         └── Your-worflow-file.yml
-'''
+```
