@@ -98,4 +98,4 @@ After you have added the input files and the workflow file, you can trigger/run 
 #### You can view an example repo [here](https://GitHub.com/ShantanuDash/temp)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ShantanuDash&repo=temp&show_owner=True)](https://GitHub.com/ShantanuDash/temp)
 
-
+_Note: The GPL-3.0 License has been chosen as Siesta uses it. Thus subsequent modification of this action and Siesta must continue to use the same action._
