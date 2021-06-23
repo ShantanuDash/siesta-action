@@ -29,6 +29,8 @@ runs:
         sudo apt-get install build-essential checkinstall
         sudo apt-get install openmpi-common openmpi-bin libopenmpi-dev libblacs-mpi-dev libnetcdf-dev netcdf-bin libnetcdff-dev libscalapack-mpi-dev libblas-dev liblapack-dev
         sudo apt-get install openmpi-doc libopenmpi-dev libmpich-dev
+      shell: bash
+      
     - name: Install Siesta
       run: |
         git clone https://gitlab.com/siesta-project/siesta.git
