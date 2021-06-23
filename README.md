@@ -1,4 +1,4 @@
-# [siesta-action](https://github.com/marketplace/actions/siesta-action) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FShantanuDash%2Fsiesta-action&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) 
+# [siesta-action](https://github.com/marketplace/actions/siesta-action) [![Visitors(Today/Total)](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FShantanuDash%2Fsiesta-action&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) 
 _Do consider starring this repo/action if you like it. Also let me know about any improvements or suggestions._
 
 I use the [latest stable release ](https://gitlab.com/siesta-project/siesta/-/tree/rel-4.1) of  [Siesta](https://gitlab.com/siesta-project/siesta) and using github action perform small DFT calculations.
@@ -98,4 +98,3 @@ After you have added the input files and the workflow file, you can trigger/run 
 #### You can view an example repo [here](https://GitHub.com/ShantanuDash/temp)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ShantanuDash&repo=temp&show_owner=True)](https://GitHub.com/ShantanuDash/temp)
 
-_Note: The GPL-3.0 License has been chosen as Siesta uses it. Thus subsequent modification of this action and Siesta must continue to use the same action._
