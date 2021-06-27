@@ -16,6 +16,10 @@ inputs:
         description: 'Name of the output file'
         default: 'ip.out'
         required: true
+      time:
+        description: 'Timeout Time'
+        default: 'i6m'
+        required: true
 
 runs:
   using: "composite"
@@ -43,5 +47,5 @@ runs:
       run: |
         cd ${{inputs.dir-name }}/
         ls
-        timeout --foreground 5.75h ./siesta < ${{ inputs.file-name }} | tee ${{ inputs.out-name }}
+        timeout --foreground ${{ inputs.time }} ./siesta < ${{ inputs.file-name }} | tee ${{ inputs.out-name }}
       shell: bash
