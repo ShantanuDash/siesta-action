@@ -27,10 +27,6 @@ runs:
     - name: Check vars
       run: echo "jdjhugh" ${{ inputs.dir-name }} "${{ inputs.file-name }}" "${{ inputs.out-name }}"
       shell: bash
-    - name: checkout
-      uses: actions/checkout@v2
-      with:
-          ref: 'parallel'
     - name: Install Siesta
       run: |
         git clone https://gitlab.com/siesta-project/siesta.git
@@ -51,11 +47,10 @@ runs:
       run: |
         cd ${{inputs.dir-name }}/
         ls
-        #timeout --foreground ${{ inputs.time }} ./siesta < ${{ inputs.file-name }} | tee ${{ inputs.out-name }}
+        timeout --foreground ${{ inputs.time }} ./siesta < ${{ inputs.file-name }} | tee ${{ inputs.out-name }}
+        RESULT="$?"
+        if [ "$RESULT" != "0" ]; then
+        exit 0
+        fi
       shell: bash
 
-     - name: Run script file
-      run: |
-         chmod +x .script.sh
-         ./script.sh
-      shell: bash
