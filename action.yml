@@ -40,7 +40,6 @@ runs:
       run: |
         pwd
         cp siesta/Obj/siesta ${{ inputs.dir-name }}/
-        cp script.sh ${{ inputs.dir-name }}/
       shell: bash  
 
     - name: Calculation
