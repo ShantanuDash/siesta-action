@@ -47,9 +47,5 @@ runs:
         cd ${{inputs.dir-name }}/
         ls
         timeout --foreground ${{ inputs.time }} ./siesta < ${{ inputs.file-name }} | tee ${{ inputs.out-name }}
-        RESULT="$?"
-        if [ "$RESULT" != "0" ]; then
-        exit 0
-        fi
       shell: bash
 
